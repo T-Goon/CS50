@@ -1,0 +1,12 @@
+1.  stdint.h is a file that holds a bunch of macros and typedefs that makes code more portable.
+2.  uint8_t, uint32_t, int32_t, and uint16_t are used in the program because after #include <stdint.h> various data types have had their name changed to uint8_t, uint32_t, int32_t, and uint16_t.
+3.  BYTE is 1 byte long,  DWORD is 4 bytes, LONG is 4 bytes, and WORD is 2 bytes.
+4.  The first 2 bytes of a BMP file has the letters'B' and 'M' in ASCII.
+5.  The differece is that one of bfSize is the size if the bitmap in bytes and biSize is the number of bytes needed for the BITMAPINFOHEADER struct.
+6.  If biHeight is negative it means that the bitmap is top-down.
+7.  biBitCount determines BMP color depth.
+8.  fopen might return NULL because the file that it has tried to open does not exist.
+9.  fread's third argument always is a 1 because the bmp.h file only has one BITMAPFILEHEADER and RGBTRIPLE.
+10. It returns 3.
+11. fseek move the current position in a file to the desired one specifed by the second and third parameters.
+12. SEEK_CUR is the current position of the pointer in the file.

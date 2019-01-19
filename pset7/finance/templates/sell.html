@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <h1>Sell</h1>
+    <br>
+    <form action="/sell" method="post">
+        <select name="symbol">
+            <option value ="none" selected="selected">Symbol</option>
+            {% for names in stocks %}
+            <option value={{names.name}}>{{names.name}}</option>
+            {% endfor %}
+        </select>
+        <br>
+        <input type="number" name=shares placeholder="Shares">
+        <br>
+        <br>
+        <button type="submit">Sell</button>
+    </form>
+{% endblock %}

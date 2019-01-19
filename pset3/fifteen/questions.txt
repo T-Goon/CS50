@@ -1,0 +1,4 @@
+0. The game allows for the dimensions of the board, to be intergers 3-9 inclusive.
+1. The game's board is represented by an array.
+2. greet() is called to greet the player at the begining of the game.
+3. I need to implement init(), draw(), move(), and won().

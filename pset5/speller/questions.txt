@@ -1,0 +1,9 @@
+0.  pneumonoultramicroscopicsilicovolcanoconiosis is an example of the longest word the program can check for spelling.
+1.  It times how long a process takes.
+2.  There are 2 parts to the rusage struct.
+3.  The variables are passed by reference and not by value because it needs to be that way for the null check.
+4.  The for loop gets one character from the file at a time and continues until it reaches the end of the file. Then it take those characters and puts them in a array. If the word is too long or contains a number the word will
+    be skipped over. When it finds a character that is not a number, letter, or apostrophe it ends the word string with a /0. Then it adds one to the word count, checks to see if it is misspelled, and times how long
+    it takes to check the spelling. If a misspelled word is found then the word is printed out and one is added to the misspelled words counter. This continues until the file ends.
+5.  The reason why fgetc is used and not fscanf is that it is harder to check the word to things like length and if it contains a number. It is also harder to find the end of the file.
+6.  They are declared with const to show that those variables should not change.

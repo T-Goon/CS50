@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title%}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <h1>Add Cash</h1>
+    <br>
+    <br>
+    <h2>Current Cash</h2>
+    <br>
+    <h3>${{cash}}</h3>
+    <br>
+    <br>
+    <form action="/addCash" method="POST">
+        <input type="number" name='toAdd' step="0.01">
+        <br>
+        <button type="submit">Add</button>
+    </form>
+{% endblock %}

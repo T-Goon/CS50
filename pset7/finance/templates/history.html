@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <h1>History</h1>
+    <br>
+    <table style="width:100%">
+        <tr>
+            <th>Symbol</th>
+            <th>Amount</th>
+            <th>Price</th>
+            <th>Date</th>
+            <th>Type</th>
+        </tr>
+         {% for stock in stocks %}
+            <tr>
+            <td>{{stock.symbol}}</td>
+            <td>{{stock.amount}}</td>
+            <td>${{stock.price}}</td>
+            <td>{{stock.dateTime}}</td>
+            <td>{{stock.type}}</td>
+            </tr>
+        {% endfor%}
+    </table>
+{% endblock %}
